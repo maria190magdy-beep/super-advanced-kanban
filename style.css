@@ -1,0 +1,13 @@
+body { font-family: Arial, sans-serif; background:#f4f6f9; }
+body.dark-mode { background:#121212; color:white; }
+body.dark-mode .column { background:#1e1e1e; color:white; }
+.add-task-card input:focus, .add-task-card select:focus { border-color:#0d6efd; box-shadow:0 0 5px rgba(13,110,253,0.5); }
+.column { min-height:300px; border-radius:10px; transition: all 0.3s; }
+.task { background:#fff; margin-bottom:10px; padding:10px; border-radius:8px; cursor:grab; transition: all 0.3s; box-shadow:0 1px 5px rgba(0,0,0,0.1); position:relative; }
+.task.dragging { opacity:0.5; transform: scale(1.05); }
+.column.drag-over { background-color:#e9ecef; }
+.task .btn { float:right; padding:2px 6px; font-size:0.9rem; margin-left:5px; }
+.badge-low { background-color:#6c757d; }
+.badge-medium { background-color:#ffc107; }
+.badge-high { background-color:#dc3545; color:white; }
+@media (max-width:768px) { .kanban-board .col-md-4 { flex:0 0 100%; max-width:100%; } }
